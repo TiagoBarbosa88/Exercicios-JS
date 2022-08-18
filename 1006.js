@@ -1,10 +1,11 @@
 var input = require("fs").readFileSync("stdin", "utf8");
 var valores = input.split("\n");
 
-var A = parseFloat(valores.shift());
-var B = parseFloat(valores.shift());
-var C = parseFloat(valores.shift());
+var A = parseInt(valores.shift());
+var B = parseInt(valores.shift());
+var C = parseInt(valores.shift());
+var D = parseInt(valores.shift());
 
-var media = (A * 2 + B * 3 + C * 5) / 10;
+var diferença = A * B - C * D;
 
-console.log("MEDIA = " + media.toFixed(1));
+console.log("DIFERENCA = " + diferença);
